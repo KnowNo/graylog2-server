@@ -27,6 +27,11 @@ const panelVariantStyles = hex => css`
     background-color: ${backgroundColor(hex)};
     border-color: ${borderColor(hex)};
 
+    > .panel-title,
+    > .panel-title > * {
+      font-size: 16px;
+    }
+
     + .panel-collapse > .panel-body {
       border-top-color: ${borderColor(hex)};
     }
@@ -73,6 +78,11 @@ const deprecatedVariantStyles = hex => css`
     color: ${colorLevel(backgroundColor(hex), 9)};
     background-color: ${backgroundColor(hex)};
     border-color: ${borderColor(hex)};
+
+    > .panel-title,
+    > .panel-title > * {
+      font-size: 16px;
+    }
 
     + .panel-collapse > .panel-body {
       border-top-color: ${borderColor(hex)};
